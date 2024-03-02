@@ -25,5 +25,10 @@ namespace WebAPI.Controllers
         {
             return await _chemicalService.CreateChemicalAsync(chemical);
         }
+        [HttpGet]
+        public ActionResult<string> Get()
+        {
+            return "Hello World";
+        }
     }
 }

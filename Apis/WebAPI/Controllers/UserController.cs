@@ -18,5 +18,6 @@ namespace WebAPI.Controllers
 
         [HttpPost]
         public async Task<string> LoginAsync(UserLoginDTO loginObject) => await _userService.LoginAsync(loginObject);
+
     }
 }
